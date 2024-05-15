@@ -165,15 +165,16 @@ body {
     background: lightblue;
   }
 
-  #cowell, #helberg, #munk {
+ img {
     position: fixed; 
     bottom: 0; 
+    max-width: 20%;
+    height:auto;
   }
   
   #cowell {
     left: 0; 
     width: 185px;
-    height: 275px;
   }
   
   #helberg {
@@ -183,11 +184,5 @@ body {
   
   #munk {
     right: 0; 
-    height: 275px;
   }
-  @media (max-width: 600px) {
-    #cowell, #helberg, #munk {
-      width: 10vw;
-      height: 50vw; 
-    }
-  }
+
