@@ -14,6 +14,11 @@
 body {
   background-image: url(morocco.png);
 }
+.container {
+  background-image: url('cowell.jpg'); /* Replace 'border.png' with the path to your PNG image */
+  background-repeat: repeat;
+  padding: 20px; /* Adjust padding as needed to prevent content from touching the border */
+}
 
   .toggle {
     margin-left: 20px;
@@ -36,7 +41,6 @@ body {
   #switches {
     position: absolute;
     font-family: 'Original Surfer', sans-serif; 
-    margin-left: px;
     margin-top: 110px;
   }
   
@@ -121,7 +125,6 @@ body {
     left: 50%;
     margin: -250px 0px 0px -250px;
   }
-  
   #topright {
     border-radius: 0 250px 0 0;
     background: purple;
@@ -146,3 +149,38 @@ body {
     margin: 0px 0px -250px 0px;
   }
   
+  #topright:hover {
+    background: pink ;
+  }
+  
+  #topleft:hover {
+    background: lightgreen;
+  }
+
+  #bottomleft:hover {
+    background: bisque;
+  }
+
+  #bottomright:hover {
+    background: lightblue;
+  }
+
+  #cowell, #helberg, #munk {
+    position: fixed; 
+    bottom: 0; 
+  }
+  
+  #cowell {
+    left: 0; 
+    width: 200px;
+    height: auto;
+  }
+  
+  #helberg {
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+  
+  #munk {
+    right: 0; 
+  }
