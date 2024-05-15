@@ -187,38 +187,6 @@ function check() {
       play();
     }, 800);
 
-    noise = false;
-  }
-
-  if (turn == playerOrder.length && correct && !win) {
-    turn++;
-    playerOrder = [];
-    compTurn = true;
-    flash = 0;
-    turnCounter.innerHTML = turn;
-    intervalId = setInterval(gameTurn, 800);
-  }
-
-}
-
-function check() {
-  if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
-    correct = false;
-
-  if (playerOrder.length == 5 && correct) {
-    winGame();
-  }
-
-  if (correct == false) {
-    flashColor();
-    turnCounter.innerHTML = "NO!";
-    audio.play();
-    setTimeout(() => {
-      turnCounter.innerHTML = turn;
-      clearColor();
-      play();
-    }, 800);
-
     sound = false;
   }
 
