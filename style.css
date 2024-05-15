@@ -172,8 +172,8 @@ body {
   
   #cowell {
     left: 0; 
-    width: 200px;
-    height: auto;
+    width: 185px;
+    height: 275px;
   }
   
   #helberg {
@@ -183,4 +183,5 @@ body {
   
   #munk {
     right: 0; 
+    height: 275px;
   }

@@ -237,10 +237,21 @@ function check() {
 
 
 function winGame() {
-  flashColor();
   turnCounter.innerHTML = "WIN!";
   on = false;
   win = true;
-  let audio =document.getElementById("win");
+  let audio = document.getElementById("win");
   audio.play();
+
+  let flashingInterval;
+
+  flashingInterval = setInterval(() => {
+    flashColor();
+    setTimeout(clearColor, 100); 
+  }, 1000); 
+
+  setTimeout(() => {
+    clearInterval(flashingInterval);
+    clearColor(); 
+  }, 50000);
 }
