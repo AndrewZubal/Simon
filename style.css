@@ -185,3 +185,9 @@ body {
     right: 0; 
     height: 275px;
   }
+  @media (max-width: 600px) {
+    #cowell, #helberg, #munk {
+      width: 10vw;
+      height: 50vw; 
+    }
+  }
