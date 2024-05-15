@@ -14,12 +14,6 @@
 body {
   background-image: url(morocco.png);
 }
-.container {
-  background-image: url('cowell.jpg'); /* Replace 'border.png' with the path to your PNG image */
-  background-repeat: repeat;
-  padding: 20px; /* Adjust padding as needed to prevent content from touching the border */
-}
-
   .toggle {
     margin-left: 20px;
     margin-right: 20px;
@@ -101,8 +95,6 @@ body {
     left: 50%;
     margin: -125px 0px 0px -125px;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
   }
   
   #topleft, #topright, #bottomleft, #bottomright {
@@ -114,8 +106,6 @@ body {
     border-color: wheat;
     box-sizing: border-box;
     cursor: pointer;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
   }
   
   #topleft {
