@@ -169,7 +169,7 @@ bottomRight.addEventListener('click', (event) => {
   }
 })
 
-function checkEasy() {
+function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     correct = false;
 
