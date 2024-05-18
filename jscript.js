@@ -218,5 +218,5 @@ function winGame() {
   setTimeout(() => {
     clearInterval(flashingInterval);
     clearColor(); 
-  }, 50000);
+  }, 5000);
 }
